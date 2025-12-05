@@ -1,73 +1,17 @@
-# React + TypeScript + Vite
+# GT7 Random Event Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web-based utility designed to generate randomized race event specifications for Gran Turismo 7. This application automates the selection process for vehicles, racing circuits, time of day, and weather conditions, adhering to the compatibility logic found within the game.
 
-Currently, two official plugins are available:
+The application is deployed and available for use at: https://gt7-random-event-gen.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Overview
 
-## React Compiler
+The primary purpose of this tool is to provide Gran Turismo 7 players with unique and valid race combinations. The randomization engine utilizes a structured dataset containing the game's car list and track configurations. Unlike simple randomizers, this application respects the constraints of the game environment. For instance, it ensures that the generated weather conditions and time of day are actually available for the selected circuit configuration.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## License
 
-## Expanding the ESLint configuration
+This software is distributed under the MIT License. Please refer to the LICENSE file in this repository for the full text of the license terms.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Disclaimer
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This is an unofficial project created for educational and entertainment purposes. Gran Turismo 7 and all associated assets are registered trademarks of Sony Interactive Entertainment Inc. and Polyphony Digital Inc. This project is not affiliated with, endorsed by, or connected to Sony Interactive Entertainment or Polyphony Digital.
