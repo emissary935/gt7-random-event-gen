@@ -7,7 +7,6 @@ import {
   Cloud,
   Sun,
   CloudRain,
-  Moon,
   Wind,
 } from 'lucide-react';
 import { TRACKS, CARS, GT7_LINKS } from '../constants';
