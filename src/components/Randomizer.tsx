@@ -31,7 +31,7 @@ export const Randomizer: React.FC = () => {
 
   const [isFullAnimating, setIsFullAnimating] = useState(false);
 
-  const getRandomItem = <T>(arr: T[]): T =>
+  const getRandomItem = <T,>(arr: T[]): T =>
     arr[Math.floor(Math.random() * arr.length)];
 
   // Animation Logic
