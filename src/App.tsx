@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Randomizer } from './components/Randomizer';
-import { Share2, Check, Wrench } from 'lucide-react';
+import { Share2, Check, Wrench, Github } from 'lucide-react';
 
 const App: React.FC = () => {
   const [copied, setCopied] = useState(false);
