@@ -83,9 +83,12 @@ const App: React.FC = () => {
               Entertainment.
             </span>
           </div>
-          <div className="flex gap-8">
-            <span>Last update: 1.65 - Spec III</span>
-          </div>
+          <div className="flex flex-col md:items-end gap-1 text-right">
+  <span>Last update: 1.65 - Spec III</span>
+  <span className="text-[#E60012] font-bold uppercase tracking-widest text-[10px]">
+    Warning: May contain traces of Gr.3 at Spa
+  </span>
+</div>
         </div>
       </footer>
     </div>
