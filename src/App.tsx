@@ -47,7 +47,7 @@ const App: React.FC = () => {
           {/* Right Actions */}
           <div className="flex items-center gap-3">
             
-            {/* Tasto GitHub (Nuovo) */}
+            {/* Tasto GitHub */}
             <a
               href="https://github.com/emissary935/gt7-random-event-gen"
               target="_blank"
@@ -59,7 +59,7 @@ const App: React.FC = () => {
               <span className="hidden sm:inline">Source</span>
             </a>
 
-            {/* Tasto Share (Esistente) */}
+            {/* Tasto Share */}
             <button
               onClick={handleShare}
               className="flex items-center gap-2 px-4 py-1.5 bg-[#E60012] hover:bg-[#c0000f] transition-colors text-white text-[11px] font-bold uppercase tracking-widest rounded"
@@ -68,6 +68,21 @@ const App: React.FC = () => {
               {copied ? 'Copied' : 'Share'}
             </button>
           </div>
+        </div>
+      </header>
+
+      {/* Main Content Area */}
+      <main className="flex-grow w-full max-w-[1400px] mx-auto px-4 md:px-6 py-12">
+        {/* Page Title Section */}
+        <div className="mb-10 pl-6 border-l-4 border-[#E60012]">
+          <h2 className="text-3xl md:text-5xl font-light text-white uppercase tracking-tight">
+            Event <span className="font-bold">Generator</span>
+          </h2>
+          <p className="text-gray-400 mt-2 text-sm max-w-2xl">
+            Create your custom race specification. Randomize cars, tracks, and
+            environmental conditions.
+          </p>
+        </div>
 
         <Randomizer />
       </main>
@@ -83,11 +98,11 @@ const App: React.FC = () => {
             </span>
           </div>
           <div className="flex flex-col md:items-end gap-1 text-right">
-  <span>Last update: 1.65 - Spec III</span>
-  <span className="text-[#E60012] font-bold uppercase tracking-widest text-[10px]">
-    Warning: May contain traces of Gr.3 at Spa
-  </span>
-</div>
+            <span>Last update: 1.65 - Spec III</span>
+            <span className="text-[#E60012] font-bold uppercase tracking-widest text-[10px]">
+              Warning: May contain traces of Gr.3 at Spa
+            </span>
+          </div>
         </div>
       </footer>
     </div>
