@@ -849,7 +849,7 @@ export const TRACKS: Track[] = [
   // --- NEW CIRCUITS ---
   { 
     id: 'cgv', name: 'Circuit Gilles-Villeneuve', location: 'Canada', variations: ['Full Course'],
-    availableTimes: TIMES_STANDARD, availableWeather: WEATHER_DRY
+    availableTimes: TIMES_LIMITED_DAY_PLUS, availableWeather: WEATHER_DRY
   },
   { 
     id: 'yas_marina', name: 'Yas Marina Circuit', location: 'UAE', variations: ['Full Course'],
