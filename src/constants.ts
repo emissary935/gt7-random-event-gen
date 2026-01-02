@@ -794,7 +794,8 @@ export const TRACKS: Track[] = [
   },
   {
     id: 'nurb_modern', name: 'Nürburgring', location: 'Germany', variations: ['GP', 'Sprint'],
-    availableTimes: ["Early Morning", "Late Morning", "Afternoon", "Evening',"Sunset"], availableWeather: WEATHER_ALL
+    availableTimes: ["Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset"], availableWeather: WEATHER_ALL
+  },
   { 
     id: 'nurb_24h', name: 'Nürburgring 24h', location: 'Germany', variations: ['24h', 'Endurance'],
     availableTimes: ["Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight"], availableWeather: WEATHER_ALL
