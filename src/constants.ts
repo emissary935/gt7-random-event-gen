@@ -659,7 +659,7 @@ export const TRACKS: Track[] = [
   },
 
   // 2. Dry + Standard Time (Dawn -> Night)
-  // Interlagos, Blue Moon, Fisherman's, Grand Valley, Lake Louise, Road Atlanta, Trial Mountain, Watkins Glen, Alsace, Maggiore, Catalunya, St Croix, Deep Forest, Dragon Trail, Eiger, Autopolis, Broad Bean, High Speed Ring, Kyoto
+  // Interlagos, Blue Moon, Fisherman's, Grand Valley, Lake Louise, Road Atlanta, Trial Mountain, Watkins Glen, Alsace, Maggiore, Catalunya, St Croix, Deep Forest, Dragon Trail, Eiger, Autopolis, Broad Bean, High Speed Ring,
   { 
     id: 'interlagos', name: 'Autódromo de Interlagos', location: 'Brazil', variations: ['Full Course'],
     availableTimes: ["Early Dawn", "Dawn", "Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight"], 
@@ -818,11 +818,16 @@ export const TRACKS: Track[] = [
     availableTimes: ["Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset"], 
     availableWeather: WEATHER_ALL
   },
-  // Kyoto (Day + Rain)
+  // Kyoto
   { 
     id: 'kyoto_combined', name: 'Kyoto Driving Park - Yamagiwa+Miyabi', location: 'Japan', variations: ['Forward', 'Reverse'],
     availableTimes: ["Dawn", "Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
-    availableWeather: WEATHER_ALL
+    availableWeather: WEATHER_DRY
+  },
+  { 
+    id: 'kyoto_driving_park', name: 'Kyoto Driving Park', location: 'Japan', variations: ['Yamagiwa', 'Miyabi'],
+    availableTimes: ["Dawn", "Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
+    availableWeather: WEATHER_DRY
   },
   // Suzuka (Day + Rain)
   { 
