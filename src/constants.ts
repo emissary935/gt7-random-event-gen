@@ -659,7 +659,7 @@ export const TRACKS: Track[] = [
   },
 
   // 2. Dry + Standard Time (Dawn -> Night)
-  // Interlagos, Blue Moon, Fisherman's, Grand Valley, Lake Louise, Road Atlanta, Trial Mountain, Watkins Glen, Alsace, Maggiore, Catalunya, St Croix, Deep Forest, Dragon Trail, Eiger, Autopolis, Broad Bean, High Speed Ring,
+  // Interlagos, Blue Moon, Fisherman's, Grand Valley, Lake Louise, Road Atlanta, Trial Mountain, Watkins Glen, Alsace, Maggiore, Catalunya, St Croix, Deep Forest, Dragon Trail, Eiger, Autopolis, Broad Bean, High Speed Ring, Kyoto
   { 
     id: 'interlagos', name: 'Autódromo de Interlagos', location: 'Brazil', variations: ['Full Course'],
     availableTimes: ["Early Dawn", "Dawn", "Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight"], 
@@ -667,6 +667,10 @@ export const TRACKS: Track[] = [
   },
   { 
     id: 'blue_moon', name: 'Blue Moon Bay Speedway', location: 'USA', variations: ['Full Course', 'Reverse'],
+    availableTimes: TIMES_STANDARD, availableWeather: WEATHER_DRY
+  },
+  { 
+    id: 'blue_moon_infield', name: 'Blue Moon Bay Speedway - Infield', location: 'USA', variations: ['Infield A', 'Infield A Reverse', 'Infield B', 'Infield B Reverse'],
     availableTimes: TIMES_STANDARD, availableWeather: WEATHER_DRY
   },
   { 
@@ -680,7 +684,22 @@ export const TRACKS: Track[] = [
     availableWeather: WEATHER_DRY
   },
   { 
+    id: 'grand_valley_south', name: 'Grand Valley - South', location: 'USA', variations: ['Forward', 'Reverse'],
+    availableTimes: ["Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
+    availableWeather: WEATHER_DRY
+  },
+  { 
     id: 'lake_louise_long', name: 'Lake Louise Long Track (Snow)', location: 'Canada', variations: ['Forward', 'Reverse'],
+    availableTimes: ["Early Dawn", "Dawn", "Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
+    availableWeather: WEATHER_DRY
+  },
+  { 
+    id: 'lake_louise_short', name: 'Lake Louise Short Track (Snow)', location: 'Canada', variations: ['Forward', 'Reverse'],
+    availableTimes: ["Early Dawn", "Dawn", "Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
+    availableWeather: WEATHER_DRY
+  },
+  { 
+    id: 'lake_louise_tri', name: 'Lake Louise Tri-Oval (Snow)', location: 'Canada', variations: ['Forward', 'Reverse'],
     availableTimes: ["Early Dawn", "Dawn", "Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
     availableWeather: WEATHER_DRY
   },
@@ -709,12 +728,42 @@ export const TRACKS: Track[] = [
     availableWeather: WEATHER_DRY
   },
   { 
+    id: 'willow_thief', name: 'Willow Springs: Horse Thief Mile', location: 'USA', variations: ['Full Course', 'Reverse'],
+    availableTimes: ["Early Morning", "Late Morning", "Afternoon", "Evening"], 
+    availableWeather: WEATHER_DRY
+  },
+  { 
+    id: 'willow_street', name: 'Willow Springs: Streets of Willow Springs', location: 'USA', variations: ['Full Course', 'Reverse'],
+    availableTimes: ["Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
+    availableWeather: WEATHER_DRY
+  },
+  { 
     id: 'alsace_village', name: 'Alsace - Village', location: 'France', variations: ['Forward', 'Reverse'],
     availableTimes: ["Dawn", "Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
     availableWeather: WEATHER_DRY
   },
   { 
+    id: 'alsace_test', name: 'Alsace - Test Course', location: 'France', variations: ['Forward', 'Reverse'],
+    availableTimes: ["Dawn", "Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
+    availableWeather: WEATHER_DRY
+  },
+  { 
     id: 'maggiore_full', name: 'Autodrome Lago Maggiore - Full Course', location: 'Italy', variations: ['Forward', 'Reverse'],
+    availableTimes: ["Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight"], 
+    availableWeather: WEATHER_DRY
+  },
+  { 
+    id: 'maggiore_centre', name: 'Autodrome Lago Maggiore - Centre Course', location: 'Italy', variations: ['Forward', 'Reverse'],
+    availableTimes: ["Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight"], 
+    availableWeather: WEATHER_DRY
+  },
+  { 
+    id: 'maggiore_east', name: 'Autodrome Lago Maggiore - East Course', location: 'Italy', variations: ['Forward', 'Reverse', 'East End Forward', 'East End Reverse'],
+    availableTimes: ["Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight"], 
+    availableWeather: WEATHER_DRY
+  },
+  { 
+    id: 'maggiore_west', name: 'Autodrome Lago Maggiore - West Course', location: 'Italy', variations: ['Forward', 'Reverse', 'West End Forward', 'West End Reverse'],
     availableTimes: ["Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight"], 
     availableWeather: WEATHER_DRY
   },
@@ -727,12 +776,22 @@ export const TRACKS: Track[] = [
     availableTimes: TIMES_LIMITED_DAY, availableWeather: WEATHER_DRY
   },
   { 
-    id: 'catalunya', name: 'Circuit de Barcelona-Catalunya', location: 'Spain', variations: ['GP Layout', 'GP No Chicane'],
+    id: 'catalunya', name: 'Circuit de Barcelona-Catalunya', location: 'Spain', variations: ['GP Layout', 'GP No Chicane', 'National', 'Rallycross'],
     availableTimes: ["Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
     availableWeather: WEATHER_DRY
   },
   { 
     id: 'st_croix_a', name: 'Circuit de Sainte-Croix - A', location: 'France', variations: ['Forward', 'Reverse'],
+    availableTimes: ["Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
+    availableWeather: WEATHER_DRY
+  },
+  { 
+    id: 'st_croix_b', name: 'Circuit de Sainte-Croix - B', location: 'France', variations: ['Forward', 'Reverse'],
+    availableTimes: ["Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
+    availableWeather: WEATHER_DRY
+  },
+  { 
+    id: 'st_croix_c', name: 'Circuit de Sainte-Croix - C', location: 'France', variations: ['Forward', 'Reverse'],
     availableTimes: ["Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
     availableWeather: WEATHER_DRY
   },
@@ -747,6 +806,11 @@ export const TRACKS: Track[] = [
     availableWeather: WEATHER_DRY
   },
   { 
+    id: 'dragon_gardens', name: 'Dragon Trail - Gardens', location: 'Croatia', variations: ['Forward', 'Reverse'],
+    availableTimes: ["Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
+    availableWeather: WEATHER_ALL
+  },
+  { 
     id: 'eiger', name: 'Eiger Nordwand', location: 'Switzerland', variations: ['Forward', 'Reverse'],
     availableTimes: ["Dawn", "Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], 
     availableWeather: WEATHER_DRY
@@ -757,6 +821,14 @@ export const TRACKS: Track[] = [
   },
   { 
     id: 'sardegna_road_a', name: 'Sardegna - Road Track - A', location: 'Italy', variations: ['Forward', 'Reverse'],
+    availableTimes: TIMES_LIMITED_DAY, availableWeather: WEATHER_DRY
+  },
+  { 
+    id: 'sardegna_road_b', name: 'Sardegna - Road Track - B', location: 'Italy', variations: ['Forward', 'Reverse'],
+    availableTimes: TIMES_LIMITED_DAY, availableWeather: WEATHER_DRY
+  },
+  { 
+    id: 'sardegna_road_c', name: 'Sardegna - Road Track - C', location: 'Italy', variations: ['Forward', 'Reverse'],
     availableTimes: TIMES_LIMITED_DAY, availableWeather: WEATHER_DRY
   },
   { 
@@ -784,8 +856,12 @@ export const TRACKS: Track[] = [
   },
   // Spa (Limited Day + Rain)
   { 
-    id: 'spa', name: 'Circuit de Spa-Francorchamps', location: 'Belgium', variations: ['Full Course', '24h Layout'],
+    id: 'spa', name: 'Circuit de Spa-Francorchamps', location: 'Belgium', variations: ['Full Course'],
     availableTimes: ["Early Morning", "Late Morning", "Afternoon", "Evening"], availableWeather: WEATHER_ALL
+  },
+  { 
+    id: 'spa_24h', name: 'Circuit de Spa-Francorchamps - 24H', location: 'Belgium', variations: ['Full Course'],
+    availableTimes: ["Dawn", "Sunrise", "Early Morning", "Late Morning", "Afternoon", "Evening", "Sunset", "Twilight", "Night"], availableWeather: WEATHER_ALL
   },
   // Nurburgring (Day + Rain)
   { 
@@ -846,7 +922,7 @@ export const TRACKS: Track[] = [
   },
   { 
     id: 'tokyo_south', name: 'Tokyo Expressway - South', location: 'Japan', variations: ['Clockwise', 'Counterclockwise'],
-    availableTimes: TIMES_EXTENDED_24H, availableWeather: WEATHER_ALL
+    availableTimes: TIMES_EXTENDED_24H, availableWeather: WEATHER_DRY
   },
   // Tsukuba (Day + Rain)
   { 
