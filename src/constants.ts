@@ -303,6 +303,7 @@ export const CARS: Car[] = [
   { name: "Honda S800 '66" },
   { name: "Honda Sports Vision Gran Turismo" },
   { name: "Hyundai ELANTRA N '23" },
+  { name: "Hyundai ELANTRA N TC '24" },
   { name: "Hyundai Genesis Coupe 3.8 Track '13" },
   { name: "Hyundai Genesis Gr.3" },
   { name: "Hyundai Genesis Gr.4" },
@@ -499,6 +500,7 @@ export const CARS: Car[] = [
   { name: "Porsche 911 GT3 (996) '01" },
   { name: "Porsche 911 GT3 (997) '09" },
   { name: "Porsche 911 GT3 RS (991) '16" },
+  { name: "Porsche 911 GT3 R (992) '22" },
   { name: "Porsche 911 GT3 RS (992) '22" },
   { name: "Porsche 911 RSR (991) '17" },
   { name: "Porsche 911 Turbo (930) '81" },
@@ -633,7 +635,8 @@ export const CARS: Car[] = [
   { name: "Volvo 240 SE Estate '93" },
   { name: "Volvo V40 T5 R-Design '13" },
   { name: "Wicked Fabrication GT 51" },
-  { name: "Škoda Vision Gran Turismo" }
+  { name: "Škoda Vision Gran Turismo" },
+   { name: "Xiaomi SU7 Ultra '25" }
 ];
 
 // --- COMPLETE TRACK LIST WITH PROFILES ---
