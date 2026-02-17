@@ -1,4 +1,4 @@
-# GT7 Random Event Generator
+# GT7 Custom Race Synthesizer
 
 A web-based utility designed to generate randomized race event specifications for Gran Turismo 7. This application automates the selection process for vehicles, racing circuits, time of day, and weather conditions, adhering to the compatibility logic found within the game.
 
