@@ -9,8 +9,8 @@ const App: React.FC = () => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: 'GT7 Spec Randomizer',
-          text: 'Generate random races for Gran Turismo 7!',
+          title: 'GT7 Custom Race Synthesizer',
+          text: 'Generate custom race events to match your garage. Discover new car, track, and weather combinations, and demonstrate your driving techniques on the asphalt.',
           url: window.location.href,
         });
       } catch (err) {
@@ -40,7 +40,7 @@ const App: React.FC = () => {
             </div>
             <div className="h-5 w-[1px] bg-[#333] hidden sm:block"></div>
             <h1 className="text-lg font-bold tracking-tight text-white uppercase hidden sm:block">
-              Event <span className="text-[#E60012]">Randomizer</span>
+              Event <span className="text-[#E60012]">Synthesizer</span>
             </h1>
           </div>
 
@@ -76,11 +76,11 @@ const App: React.FC = () => {
         {/* Page Title Section */}
         <div className="mb-10 pl-6 border-l-4 border-[#E60012]">
           <h2 className="text-3xl md:text-5xl font-light text-white uppercase tracking-tight">
-            Event <span className="font-bold">Generator</span>
+            Custom Race <span className="font-bold">Synthesizer</span>
           </h2>
           <p className="text-gray-400 mt-2 text-sm max-w-2xl">
             Create your custom race specification. Randomize cars, tracks, and
-            environmental conditions.
+            environmental conditions and demonstrate your driving techniques on the asphalt.
           </p>
         </div>
 
