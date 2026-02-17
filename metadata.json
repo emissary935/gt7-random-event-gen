@@ -1,5 +1,5 @@
 {
-  "name": "GT7 Random Event Generator",
-  "description": "A premium Gran Turismo 7 companion app for generating random car and track combinations.",
+  "name": "GT7 Event Synthesizer",
+  "description": "Generate custom race events to match your garage. Discover new car, track, and weather combinations, and demonstrate your driving techniques on the asphalt.",
   "requestFramePermissions": []
 }
