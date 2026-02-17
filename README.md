@@ -6,7 +6,7 @@ The application is deployed and available for use at: https://gt7-random-event-g
 
 ## Project Overview
 
-The primary purpose of this tool is to provide Gran Turismo 7 players with unique and valid race combinations. The randomization engine utilizes a structured dataset containing the game's car list and track configurations. Unlike simple randomizers, this application respects the constraints of the game environment. For instance, it ensures that the generated weather conditions and time of day are actually available for the selected circuit configuration.
+The primary purpose of this tool is to provide Gran Turismo 7 players with unique and valid race combinations. The randomization engine utilizes a structured dataset containing the game's car list and track configurations.
 
 ## License
 
