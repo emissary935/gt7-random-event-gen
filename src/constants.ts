@@ -375,7 +375,7 @@ export const CARS: Car[] = [
   { name: "Mazda LM55 Vision Gran Turismo (Gr.1)" },
   { name: "Mazda RX-7 GT-X (FC) '90" },
   { name: "Mazda RX-7 Spirit R Type A (FD) '02" },
-  { name: "Mazda ɛ̃fini RX-7 Type R (FD) '91 },
+  { name: "Mazda ɛ̃fini RX-7 Type R (FD) '91" },
   { name: "Mazda RX-8 Spirit R '12" },
   { name: "Mazda RX-VISION '15" },
   { name: "Mazda RX500 '70" },
