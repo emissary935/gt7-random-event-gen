@@ -508,6 +508,7 @@ export const CARS: Car[] = [
   { name: "Porsche 911 Turbo (930) '81" },
   { name: "Porsche 911 Turbo Rally (930)" },
   { name: "Porsche 911 Turbo S (992) '20" },
+  { name: "Porsche 911 Turbo S Leichtbau (964) '93" },
   { name: "Porsche 917 LIVING LEGEND" },
   { name: "Porsche 917K '70" },
   { name: "Porsche 918 Spyder '13" },
@@ -543,6 +544,7 @@ export const CARS: Car[] = [
   { name: "Renault Sport Mégane Trophy '11" },
   { name: "Renault Sport R.S.01 '16" },
   { name: "Renault Sport R.S.01 GT3 '16" },
+  { name: "Renault Twingo '93" },
   { name: "Roadster Shop Rampage" },
   { name: "SUBARU VIZIV GT Vision Gran Turismo" },
   { name: "SUZUKI Vision Gran Turismo" },
@@ -639,7 +641,8 @@ export const CARS: Car[] = [
   { name: "Volvo V40 T5 R-Design '13" },
   { name: "Wicked Fabrication GT 51" },
   { name: "Škoda Vision Gran Turismo" },
-   { name: "Xiaomi SU7 Ultra '25" }
+  { name: "Xiaomi SU7 Ultra '25" },
+  { name: "YangWang U9 '24" }
 ];
 
 // --- COMPLETE TRACK LIST WITH PROFILES ---
