@@ -178,6 +178,7 @@ export const CARS: Car[] = [
   { name: "Chris Holstrom Concepts 1967 Chevy Nova" },
   { name: "Citroën BX 19 TRS '87" },
   { name: "Citroën DS 21 Pallas '70" },
+  { name: "Citroën 2 CV 6 Charleston '86" },
   { name: "DAIHATSU COPEN RJ Vision Gran Turismo" },
   { name: "DMC DeLorean S2 '04" },
   { name: "DS 3 Racing '11" },
@@ -226,6 +227,7 @@ export const CARS: Car[] = [
   { name: "Ferrari 812 Superfast '17" },
   { name: "Ferrari Dino 246 GT '71" },
   { name: "Ferrari F12berlinetta '12" },
+  { name: "Ferrari F355 Berlinetta '94" },
   { name: "Ferrari F40 '92" },
   { name: "Ferrari F430 '06" },
   { name: "Ferrari F50 '95" },
@@ -280,6 +282,7 @@ export const CARS: Car[] = [
   { name: "Honda Beat '91" },
   { name: "Honda CR-V e:HEV EX・Black Edition '21" },
   { name: "Honda Civic Si Extra (EF) '87" },
+  { name: "Honda Civic Si Group A version '87" },
   { name: "Honda Civic SiR･II (EG) '93" },
   { name: "Honda Civic Type R (EK) '97" },
   { name: "Honda Civic Type R (EK) '98" },
@@ -305,6 +308,7 @@ export const CARS: Car[] = [
   { name: "Honda S2000 '99" },
   { name: "Honda S660 '15" },
   { name: "Honda S800 '66" },
+  { name: "Honda Step WGN Spada Premium Line '23" },
   { name: "Honda Sports Vision Gran Turismo" },
   { name: "Hyundai ELANTRA N '23" },
   { name: "Hyundai ELANTRA N TC '24" },
@@ -358,6 +362,7 @@ export const CARS: Car[] = [
   { name: "Lexus RC F Gr.4" },
   { name: "Lexus SC430 GT500 '08" },
   { name: "MAZDA RX-VISION GT3 CONCEPT" },
+  { name: "MAZDA RX-VISION GT3 EVO '26" },
   { name: "MAZDA SPIRIT RACING ROADSTER 12R '25" },
   { name: "MAZDA3 Gr.4" },
   { name: "MAZDA3 X Burgundy Selection '19" },
@@ -651,6 +656,7 @@ export const CARS: Car[] = [
   { name: "Wicked Fabrication GT 51" },
   { name: "Škoda Vision Gran Turismo" },
   { name: "Xiaomi SU7 Ultra '25" },
+  { name: "Xiaomi VGT" },
   { name: "YangWang U9 '24" }
 ];
 
@@ -963,6 +969,10 @@ export const TRACKS: Track[] = [
   { 
     id: 'yas_marina', name: 'Yas Marina Circuit', location: 'UAE', variations: ['Full Course'],
     availableTimes: TIMES_EXTENDED_24H, availableWeather: WEATHER_DRY
+  },
+  { 
+    id: 'sugo', name: 'SUGO International Racing Course', location: 'UAE', variations: ['Full Course'],
+    availableTimes: TIMES_LIMITED_DAY, availableWeather: WEATHER_ALL
   }
 ];
 
